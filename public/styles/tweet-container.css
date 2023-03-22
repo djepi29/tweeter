@@ -1,0 +1,52 @@
+#tweet-container {
+  width: 100%;
+}
+
+#tweet-container > article {
+  border-style: solid;
+    margin-top: 45px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#tweet-container > article:hover {
+  box-shadow: 10px 10px #6699cc
+}
+
+#tweet-container > article > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#tweet-container > article > header > p:last-child {
+  color: #6699cc;
+}
+
+
+#tweet-container > article > p { 
+  margin-left: 10px;
+}
+
+#tweet-container > article > footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 70%;
+  padding: 2px 10px;
+  margin-top: -10px;
+  border-top: 1px solid;
+  width: 95%;
+}
+
+#tweet-container > article > footer > p {
+  margin-top: 3px;
+  font-size: 75%;
+}
+
+#tweet-container > article > footer > div {
+  font-size: 70%;
+}
+
+#tweet-container > article > footer > div > i:hover {
+  color: #eab308;
+  cursor: pointer;
+}

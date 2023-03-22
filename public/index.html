@@ -18,16 +18,21 @@
 
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     
-    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/page_header.css" type="text/css" />
     
     <link rel="stylesheet" href="/styles/main.css" type="text/css" />
     
+    <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
+    
     <!-- External JS -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
     
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     
   </head>
 
@@ -41,7 +46,7 @@
       </div>
     </nav>
     
-    <header>
+    <header id ="page-header">
       <div>
         <img src="/images/profile-hex.png"> 
       </div>
@@ -53,17 +58,43 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form action="/tweets" method="POST">
           <label for="tweet-text"></label>
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div>
-            <button type="submit">Tweet</button>
+            <button type="submit"><i class="fa-solid fa-kiwi-bird"></i>Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
+
+      <section id="tweet-container">
+
+        <article>
+
+          <header>
+              <p><i class="fa-regular fa-circle-user"></i> Name</p>
+            <p> @lordCarlton</p>
+          </header>
+
+          <p>i think it should be here</p>
+          <footer>
+            <p>2 years ago</p>
+            <div>
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </footer>
+
+
+        </article>
+
+      </section>
+
     </main>
   </body>
 </html>
