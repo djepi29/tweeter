@@ -21,16 +21,20 @@ body {
   font-family: 'Source Sans Pro';
 }
 
+@media only screen and (min-width: 1024px) {
+  .breakpoint {
+    display: flex;
+    padding: 200px 25px 25px 20px;
+    gap: 70px;
+  }
+  #page-header {
+    border-radius: 8px;
+  }
+   nav {
+    background-color: #003084;
+  background-image: none;
+   }
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
- /* main {
-  width: 90%;
-  margin: 0 auto; 
-  background-color: inherit; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- } */
