@@ -10,7 +10,8 @@ Tweeter is a single-page Twitter clone, where users can create short posts of up
 ## final product
 
 !["desktop layout"](https://github.com/djepi29/tweeter/blob/master/docs/desktop.png?raw=true)
-!["tablet layout"](https://github.com/djepi29/tweeter/blob/master/docs/desktop.png?raw=tru
+
+!["tablet layout"](https://github.com/djepi29/tweeter/blob/master/docs/tablet.png?raw=true)
 
 ## Getting Started
 
